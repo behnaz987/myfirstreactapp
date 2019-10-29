@@ -1,26 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
+import Input from './components/input/input';
+//import Button from './components/button/button';
+import Button from '@material-ui/core/Button';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends React.Component {
+    render() {
+        return (
+            <div className="div">
+                <Input id="first"/>
+                <Input id="second" style={{marginTop: 100}}/>
+                <Button className=" button" variant="contained">Submit</Button>
+            </div>
+
+
+        );
+    }
+
 }
 
 export default App;
